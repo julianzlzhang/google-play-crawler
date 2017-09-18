@@ -73,12 +73,12 @@
 
 	</dependencies>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>protoc-plugin</id>
-			<url>http://sergei-ivanov.github.com/maven-protoc-plugin/repo/releases/</url>
-		</pluginRepository>
-	</pluginRepositories>
+<!-- 	<pluginRepositories> -->
+<!-- 		<pluginRepository> -->
+<!-- 			<id>protoc-plugin</id> -->
+<!-- 			<url>http://github.com/julianzlzhang/maven-protoc-plugin/target/</url> -->
+<!-- 		</pluginRepository> -->
+<!-- 	</pluginRepositories> -->
 
 	<build>
 		<plugins>
@@ -115,29 +115,29 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>com.google.protobuf.tools</groupId>
-				<artifactId>maven-protoc-plugin</artifactId>
-				<version>0.3.1</version>
+<!-- 			<plugin> -->
+<!-- 				<groupId>com.google.protobuf.tools</groupId> -->
+<!-- 				<artifactId>maven-protoc-plugin</artifactId> -->
+<!-- 				<version>0.1.11-SNAPSHOT</version> -->
 
-				<configuration>
-					<protocExecutable>protoc</protocExecutable>
-					<protoSourceRoot>${project.basedir}/src/main/protobuf/</protoSourceRoot>
-					<languageSpecifications>
-						<LanguageSpecification>
-							<language>JAVA</language>
-							<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-						</LanguageSpecification>
-					</languageSpecifications>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 				<configuration> -->
+<!-- 					<protocExecutable>protoc</protocExecutable> -->
+<!-- 					<protoSourceRoot>${project.basedir}/src/main/protobuf/</protoSourceRoot> -->
+<!-- 					<languageSpecifications> -->
+<!-- 						<LanguageSpecification> -->
+<!-- 							<language>JAVA</language> -->
+<!-- 							<outputDirectory>${project.basedir}/src/main/java</outputDirectory> -->
+<!-- 						</LanguageSpecification> -->
+<!-- 					</languageSpecifications> -->
+<!-- 				</configuration> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<goals> -->
+<!-- 							<goal>compile</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 		</plugins>
 	</build>
 </project>
